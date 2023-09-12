@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { NebulaComponent } from './nebula/nebula.component';
+import { LinechartComponent } from './linechart/linechart.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    NebulaComponent,
+    LinechartComponent
   ],
   imports: [
     BrowserModule,
