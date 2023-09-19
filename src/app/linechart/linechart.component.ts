@@ -1,6 +1,7 @@
+// const lineChart = require('@nebula.js/sn-line-chart');
 
     import { Component, OnInit } from '@angular/core';
-
+// import { Globals } from '../globals';
     @Component({
       selector: 'app-linechart',
       templateUrl: './linechart.component.html',
@@ -18,21 +19,18 @@
         }
       };
     
-
-      
       viz2 = {
         type: 'lineChart',
         properties: {
-          qInfo:{
-            qId:'qd-2',
-            qType:'lineChart'
-          },
           qHyperCubeDef: {
+            // qDimensions: [
+            //   { qDef: { qFieldDefs: ['Group Data'] } },
+            // ],
             qDimensions: [
               { qDef: { qFieldDefs: ['Group Data'] } },
             ],
             qMeasures: [
-              { qDef: { qDef: ['Ingressi'], autoSort: false }, qSortBy: { qSortByNumeric: 1 } },
+              { qDef: { qDef: ["=Ingressi"], autoSort: false }, qSortBy: { qSortByNumeric: 1 } },
             ],
             qInterColumnSortOrder: [1, 0],
           },
@@ -48,8 +46,6 @@
         }
       };
     
-
-
       
       ngOnInit(): void {
       }

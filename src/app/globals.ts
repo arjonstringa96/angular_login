@@ -1,7 +1,9 @@
 // import enigma from 'enigma.js';
+// declare module '@nebula.js/stardust';
 const enigma = require('enigma.js');
 const schema = require('enigma.js/schemas/12.20.0.json');
-import { embed } from '@nebula.js/stardust'
+// import * as stardust from '@nebula.js/stardust';
+import { embed } from '@nebula.js/stardust';
 
 // import schema from 'enigma.js/schemas/12.170.2.json';
 // const  embed =  require('@nebula.js/stardust')
