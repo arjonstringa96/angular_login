@@ -9,7 +9,7 @@ import { embed } from '@nebula.js/stardust';
 // const  embed =  require('@nebula.js/stardust')
 const lineChart = require('@nebula.js/sn-line-chart');
 // const kpi = require('@nebula.js/sn-kpi')
-// const barChart = require('@nebula.js/sn-line-chart');
+const barChart = require('@nebula.js/sn-line-chart');
 // const pieChart = require('@nebula.js/sn-line-chart');
 // const sankeyChart = require('@nebula.js/sn-line-chart');
 // const funnelChart = require('@nebula.js/sn-line-chart');
@@ -53,9 +53,14 @@ const n = embed.createConfiguration({
       name: 'lineChart',
       load: () => lineChart,
     },
+    {
+      name: 'barChart',
+      load: () => barChart,
+    },
  
   ],
 });
+
 
 
 

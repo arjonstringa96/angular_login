@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NebulaComponent } from './nebula/nebula.component';
 import { LinechartComponent } from './linechart/linechart.component';
+import { BarchartComponent } from './barchart/barchart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     NebulaComponent,
-    LinechartComponent
+    LinechartComponent,
+    BarchartComponent
   ],
   imports: [
     BrowserModule,

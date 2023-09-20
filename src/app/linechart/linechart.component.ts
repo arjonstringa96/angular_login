@@ -23,14 +23,11 @@
         type: 'lineChart',
         properties: {
           qHyperCubeDef: {
-            // qDimensions: [
-            //   { qDef: { qFieldDefs: ['Group Data'] } },
-            // ],
             qDimensions: [
-              { qDef: { qFieldDefs: ['Group Data'] } },
+              { qDef: { qFieldDefs: ['GeneralTimestamp.ResultTimestamp'] } },
             ],
             qMeasures: [
-              { qDef: { qDef: ["=Ingressi"], autoSort: false }, qSortBy: { qSortByNumeric: 1 } },
+              { qDef: { qDef: 'Ingressi', autoSort: false }, qSortBy: { qSortByNumeric: 1 } },
             ],
             qInterColumnSortOrder: [1, 0],
           },
@@ -45,6 +42,9 @@
           paddingTop: '100px'
         }
       };
+
+        
+        
     
       
       ngOnInit(): void {

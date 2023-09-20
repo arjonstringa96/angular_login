@@ -1,4 +1,4 @@
-// @nebula.js/stardust.d.ts
+// // @nebula.js/stardust.d.ts
 
 declare module '@nebula.js/stardust';
 

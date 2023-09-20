@@ -20,9 +20,9 @@ export class NebulaComponent implements OnInit {
    init = async () => {
     const nebula = await Globals.nebulaPromise();
     const { type, properties } = this;
-    console.log(this);
-console.log(type)
-console.log(properties)
+    console.log('check if type and properties come from this',this);
+console.log('consoles logs the type',type)
+console.log('consoles logs the properties',properties)
 if (type === 'selections') {
   try {
     const selections = await nebula.selections();
@@ -36,6 +36,8 @@ if (type === 'selections') {
       element: this.elementRef.nativeElement,
       type,
       properties,
+      
+
     });
   } catch (error) {
     console.error('Error rendering nebula:', error);
@@ -44,9 +46,6 @@ if (type === 'selections') {
 }
 }
      
-      
-     
-  
   
   ngOnInit() {
     this.init();

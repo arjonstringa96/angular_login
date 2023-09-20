@@ -2,6 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "types": ["node", "body-parser", /* other types */],
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -12,6 +13,9 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
+    "paths": {
+      "@nebula.js/stardust": ["node_modules/@nebula.js/stardust"] // Ensure the path is correct
+    },
 
     "downlevelIteration": true,
     "experimentalDecorators": true,
@@ -34,6 +38,7 @@
   },
   "include": [
     "src/**/*.ts",
-    "node_modules/@types"
+    "node_modules/@types",
+    "node_modules/@nebula.js/stardust"
   ]
 }
