@@ -4,7 +4,9 @@
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
     "types": [
-      "jasmine","@type/nebula.js__stardust"
+      "jasmine",
+      "@type/nebula.js__stardust",
+      "@angular/localize"
     ]
   },
   "include": [

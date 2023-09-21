@@ -20,6 +20,10 @@ import { QuickviewComponent } from '../layout/quickview/quickview.component';
 import { MachinelearningComponent } from '../layout/machinelearning/machinelearning.component';
 import { ComparisonComponent } from '../layout/comparison/comparison.component';
 import { DashboardComponent } from '../layout/dashboard/dashboard.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -45,9 +49,11 @@ import { DashboardComponent } from '../layout/dashboard/dashboard.component';
     MatToolbarModule,
     MatIconModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    NgbModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

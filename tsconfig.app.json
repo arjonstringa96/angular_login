@@ -3,7 +3,10 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": ["node"]  //"nebula.js"
+    "types": [
+      "node",
+      "@angular/localize"
+    ]  //"nebula.js"
   },
   "files": [
     "src/main.ts"
