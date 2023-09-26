@@ -23,6 +23,8 @@ import { DashboardComponent } from '../layout/dashboard/dashboard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { KpiProvaComponent } from './kpi-prova/kpi-prova.component';
+import { FilterComponent } from './filter/filter.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     QuickviewComponent,
     MachinelearningComponent,
     ComparisonComponent,
-    DashboardComponent
+    DashboardComponent,
+    KpiProvaComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,

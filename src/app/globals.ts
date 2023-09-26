@@ -4,7 +4,8 @@ const enigma = require('enigma.js');
 const schema = require('enigma.js/schemas/12.20.0.json');
 // import * as stardust from '@nebula.js/stardust';
 import { embed } from '@nebula.js/stardust';
-
+const kpi = require("@nebula.js/sn-kpi")
+const filterpane = require("@nebula.js/sn-filter-pane")
 // import schema from 'enigma.js/schemas/12.170.2.json';
 // const  embed =  require('@nebula.js/stardust')
 const lineChart = require('@nebula.js/sn-line-chart');
@@ -47,7 +48,10 @@ const n = embed.createConfiguration({
 
   types: [
     
-      
+      {
+        name: "filterpane",
+      load: () => filterpane,
+      },
    
     {
       name: 'lineChart',
@@ -56,6 +60,10 @@ const n = embed.createConfiguration({
     {
       name: 'barChart',
       load: () => barChart,
+    },
+    {
+      name: 'kpi',
+      load: () => kpi,
     },
  
   ],
@@ -192,6 +200,7 @@ const connectQlik = async () => {
 export class Globals{
   public static nebulaPromise = async () => {
     const app = await connectQlik();
+    
     return n(app);
 
   }
