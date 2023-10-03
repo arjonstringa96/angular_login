@@ -29,10 +29,19 @@ if (type === 'selections') {
   try {
     const selections = await nebula.selections();
     selections.mount(this.elementRef.nativeElement);
-  //   const field = await nebula.field();
-  // field.mount(this.elementRef.nativeElement);
+  // const field = await nebula.field('GeneralTimestamp.ResultTimestamp');
+  // field.mount(this.elementRef.nativeElement, { title: 'Timestamp' } );
+  nebula.render({
+    element: this.elementRef.nativeElement,
+    id: 'ZkuTsBU'
+    
+  });
+  nebula.render({
+    element: this.elementRef.nativeElement,
+    id: '40b82fc2-f80c-419e-bf9c-79cf818c7b57'});
   } catch (error) {
     console.error('Error fetching selections:', error);
+    
   }
 } else {
   try {
@@ -40,8 +49,6 @@ if (type === 'selections') {
       element: this.elementRef.nativeElement,
       type,
       properties,
-      
-
     });
   } catch (error) {
     console.error('Error rendering nebula:', error);
@@ -57,44 +64,6 @@ if (type === 'selections') {
 }
 
 
-//     if (type === 'selections' ) {
-//       // nebula.render({
-        
-//       //   element: document.querySelector("#object"),
-
-//       //   type: "lineChart",
-
-//       //   fields: ["Anni", "=Ingressi"],
-          
-        
-                 
-//       //          });
-
-//       // nebula.render({  element: document.querySelector(".object"),  id: "XRGvaJ",});
-
-//       const selections = await nebula.selections();
-//       selections.mount(this.elementRef.nativeElement);
-//     } else {
-//       // nebula.render({id: "XRGvaJ"})
-// nebula.render({
-//                  element: this.elementRef.nativeElement,
-//                  type,
-//                   properties
-                 
-//                });
-//               }}
-
-              
-
-
-
-      // const qInfo = {
-      //   qId: '', // Set a valid object ID here
-      //   qType: '', // Set a valid object type here
-      // };
-
-      // // Merge qInfo into the properties object
-      //   const propertiesWithQInfo = { ...properties, qInfo };
 
 
 

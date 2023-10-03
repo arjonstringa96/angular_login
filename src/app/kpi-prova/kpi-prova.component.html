@@ -1,6 +1,139 @@
 <div class="container">
-    <nebula [properties]="ingressi.properties" [type]="ingressi.type" [style]="ingressi.style"></nebula>
-    <nebula [properties]="camfolder.properties" [type]="camfolder.type" [style]="camfolder.style"></nebula>
+  <div class="row">
+<h1>KPI customer experience</h1>
+
+    <div class="col vertical">    
+      <nebula [properties]="feedback.properties" [type]="feedback.type" [style]="feedback.style"></nebula>
+      <nebula [properties]="Feedbackap.properties" [type]="Feedbackap.type" [style]="Feedbackap.style"></nebula>
+    </div>
+    <div class="col vertical">
+      <nebula [properties]="nps.properties" [type]="nps.type" [style]="nps.style"></nebula>
+      <nebula [properties]="npsap.properties" [type]="npsap.type" [style]="npsap.style"></nebula>
+
+    </div>
+    <div class="col vertical">
+      <nebula [properties]="smileindex.properties" [type]="smileindex.type" [style]="smileindex.style"></nebula>
+      <nebula [properties]="SMILEINdexap.properties" [type]="SMILEINdexap.type" [style]="SMILEINdexap.style"></nebula>
+
+
+    </div>
+    <div class="col vertical">
+      <nebula [properties]="soddisfazione.properties" [type]="soddisfazione.type" [style]="soddisfazione.style"></nebula>
+      <nebula [properties]="soddisfazioneap.properties" [type]="soddisfazioneap.type" [style]="soddisfazioneap.style"></nebula>
+    </div>
+    <div class="col vertical">
+    </div>
+    <div class="col vertical">
+    </div>
 
   </div>
-  <!-- <h1>{{viz2.properties.qHyperCubeDef.qMeasures}}</h1> -->
+  </div>
+  <div class="col-12"><mat-divider></mat-divider></div>.
+
+
+<!--  ****************** KPI ECONOMICI *********************  -->
+
+  <div class="row">
+<h1> KPI economici</h1>
+    <div class="col vertical">    
+      <nebula [properties]="incasso.properties" [type]="incasso.type" [style]="incasso.style"></nebula>
+      <nebula [properties]="IncassoAp.properties" [type]="IncassoAp.type" [style]="IncassoAp.style"></nebula>
+
+    </div>
+    <div class="col vertical">
+      <nebula [properties]="scontrinoMedio.properties" [type]="scontrinoMedio.type" [style]="scontrinoMedio.style"></nebula>
+      <nebula [properties]="scontrinoMedioAp.properties" [type]="scontrinoMedioAp.type" [style]="scontrinoMedioAp.style"></nebula>
+    </div>
+    <div class="col vertical">
+      <nebula [properties]="mqTotali.properties" [type]="mqTotali.type" [style]="mqTotali.style"></nebula>
+      <nebula [properties]="mqTotaliAp.properties" [type]="mqTotaliAp.type" [style]="mqTotaliAp.style"></nebula>
+
+    </div>
+    <div class="col vertical">
+      <nebula [properties]="conversionRate.properties" [type]="conversionRate.type" [style]="conversionRate.style"></nebula>
+      <nebula [properties]="convertionRateAp.properties" [type]="convertionRateAp.type" [style]="convertionRateAp.style"></nebula>
+
+    </div>
+    <div class="col vertical">
+      <nebula [properties]="resaMqAnno.properties" [type]="resaMqAnno.type" [style]="resaMqAnno.style"></nebula>
+      <nebula [properties]="resaMqAnnoAp.properties" [type]="resaMqAnnoAp.type" [style]="resaMqAnnoAp.style"></nebula>
+
+    </div>
+    <div class="col vertical">
+      <nebula [properties]="altro.properties" [type]="altro.type" [style]="altro.style"></nebula>
+      <nebula [properties]="altroAp.properties" [type]="altroAp.type" [style]="altroAp.style"></nebula>
+    </div>
+
+  </div>
+  
+
+<!-- KPI ECONOMICI SECOND ROW -->
+<div class="row">
+  <div class="col vertical">    
+    <nebula [properties]="scontrini.properties" [type]="scontrini.type" [style]="scontrini.style"></nebula>
+    <nebula [properties]="scontriniAp.properties" [type]="scontriniAp.type" [style]="scontriniAp.style"></nebula>
+
+  </div>
+  <div class="col vertical">
+    <nebula [properties]="Ingressi.properties" [type]="Ingressi.type" [style]="Ingressi.style"></nebula>
+    <nebula [properties]="IngressiAp.properties" [type]="IngressiAp.type" [style]="IngressiAp.style"></nebula>
+  </div>
+  <div class="col vertical">
+    <!-- <nebula [properties]="nps.properties" [type]="nps.type" [style]="nps.style"></nebula>
+    <nebula [properties]="npsap.properties" [type]="npsap.type" [style]="npsap.style"></nebula> -->
+
+    <!-- <mat-divider class="vertical"></mat-divider> -->
+
+  </div>
+  <div class="col vertical">
+    <nebula [properties]="mqGiornagliero.properties" [type]="mqGiornagliero.type" [style]="mqGiornagliero.style"></nebula>
+    <nebula [properties]="mqGiornaglieroAp.properties" [type]="mqGiornaglieroAp.type" [style]="mqGiornaglieroAp.style"></nebula>
+
+  </div>
+  <div class="col vertical">
+  </div>
+  <div class="col vertical">
+
+  </div>
+
+</div>
+  
+<div class="col-12"><mat-divider></mat-divider></div>
+
+
+
+<!-- **************** KPI LOGISTICI ****************** -->
+
+
+<div class="row">
+<h1> KPI logistici</h1>
+  <div class="col vertical">    
+    <nebula [properties]="feedback.properties" [type]="feedback.type" [style]="feedback.style"></nebula>
+    <nebula [properties]="Feedbackap.properties" [type]="Feedbackap.type" [style]="Feedbackap.style"></nebula>
+
+  </div>
+  <div class="col vertical">
+  
+  </div>
+  <div class="col vertical">
+  
+  </div>
+  <div class="col vertical">
+  
+  </div>
+  <div class="col vertical">
+   
+  </div>
+  <div class="col vertical">
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+ 

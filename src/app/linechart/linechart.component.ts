@@ -15,7 +15,7 @@
         type: 'selections',
         style: {
           width: '100%',
-          paddingTop: '50px'
+          paddingTop: '0px'
         }
       };
     
@@ -39,7 +39,7 @@
         style: {
           width: '100%',
           height: '600px',
-          paddingTop: '100px'
+          paddingTop: '0px'
         }
       };
 
