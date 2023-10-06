@@ -25,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { KpiProvaComponent } from './kpi-prova/kpi-prova.component';
 import { FilterComponent } from './filter/filter.component';
+// import { AnalysiscompComponent } from './analysiscomp/analysiscomp.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { FilterComponent } from './filter/filter.component';
     ComparisonComponent,
     DashboardComponent,
     KpiProvaComponent,
-    FilterComponent
+    FilterComponent,
+    
   ],
   imports: [
     BrowserModule,

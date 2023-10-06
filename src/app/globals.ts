@@ -1,10 +1,14 @@
 // import enigma from 'enigma.js';
 // declare module '@nebula.js/stardust';
+import { Injectable } from '@angular/core';
+
 const enigma = require('enigma.js');
 const schema = require('enigma.js/schemas/12.20.0.json');
 // import * as stardust from '@nebula.js/stardust';
 import { embed } from '@nebula.js/stardust';
 const kpi = require("@nebula.js/sn-kpi")
+const combochart = require('@nebula.js/sn-combo-chart');
+
 const filterpane = require("@nebula.js/sn-filter-pane")
 // import schema from 'enigma.js/schemas/12.170.2.json';
 // const  embed =  require('@nebula.js/stardust')
@@ -26,6 +30,7 @@ const config = {
   appId: '77c3954d-ce54-4337-9ca3-f54bf93f49e7',
   webIntegrationId: 'ZstNGu3zpJUHUz8-50_i-YKexhpdsyGL',
 };
+
 
 
 
@@ -56,6 +61,10 @@ const n = embed.createConfiguration({
     {
       name: 'lineChart',
       load: () => lineChart,
+    },
+    {
+      name: 'combochart',
+      load: () => combochart,
     },
     {
       name: 'barChart',
@@ -198,10 +207,15 @@ const connectQlik = async () => {
 
 
 export class Globals{
-  public static nebulaPromise = async () => {
-    const app = await connectQlik();
-    
-    return n(app);
 
+  private static nebula: any ;
+  public static connection = async () => {
+     Globals.nebula = await connectQlik();
+    
   }
-}
+
+public static getNebula()
+{
+  return n(Globals.nebula);
+  
+}}

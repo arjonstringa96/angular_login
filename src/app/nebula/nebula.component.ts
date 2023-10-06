@@ -19,7 +19,7 @@ export class NebulaComponent implements OnInit {
    }
 
    init = async () => {
-    const nebula = await Globals.nebulaPromise();
+    const nebula = await Globals.getNebula();
     const { type, properties } = this;
     // const filterElement = document.querySelector('#filter');
     console.log('check if type and properties come from this',this);
@@ -36,9 +36,20 @@ if (type === 'selections') {
     id: 'ZkuTsBU'
     
   });
+
+  //c2ff3908-7432-4d83-a952-0be71bac76bf
   nebula.render({
     element: this.elementRef.nativeElement,
-    id: '40b82fc2-f80c-419e-bf9c-79cf818c7b57'});
+    id: 'uRpPQNR'
+    
+  });
+  nebula.render({
+         element: this.elementRef.nativeElement.querySelector('#map'),
+         id: 'GXwgTZ'});
+        
+  // nebula.render({
+  //   element: this.elementRef.nativeElement,
+  //   id: '40b82fc2-f80c-419e-bf9c-79cf818c7b57'});
   } catch (error) {
     console.error('Error fetching selections:', error);
     
