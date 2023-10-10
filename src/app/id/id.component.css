@@ -1,0 +1,36 @@
+.container{
+    width: 100%;
+    height: 600px;
+}
+
+#cx {
+    width: 100%;
+    height: 600px;
+}
+
+#ingressi {
+    width: 100%;
+    height: 600px;
+}
+#incasso {
+    width: 100%;
+    height: 600px;
+}
+#scontrino {
+    width: 100%;
+    height: 600px;
+}
+#incassoIngressi {
+    width: 100%;
+    height: 600px;
+}
+#ingressiMeteo {
+    width: 100%;
+    height: 600px;
+}
+
+
+/* ng-template {
+    width: 100%;
+    height: 300px;
+} */

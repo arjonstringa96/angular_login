@@ -25,6 +25,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { KpiProvaComponent } from './kpi-prova/kpi-prova.component';
 import { FilterComponent } from './filter/filter.component';
+import { IdComponent } from './id/id.component';
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+
 // import { AnalysiscompComponent } from './analysiscomp/analysiscomp.component';
 
 
@@ -45,6 +48,9 @@ import { FilterComponent } from './filter/filter.component';
     DashboardComponent,
     KpiProvaComponent,
     FilterComponent,
+    IdComponent,
+    
+    
     
   ],
   imports: [
@@ -56,8 +62,9 @@ import { FilterComponent } from './filter/filter.component';
     MatIconModule,
     MatDividerModule,
     MatListModule,
+    BrowserAnimationsModule,
     NgbModule,
-    BrowserAnimationsModule
+    NgbNavModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
