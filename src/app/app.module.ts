@@ -27,7 +27,7 @@ import { KpiProvaComponent } from './kpi-prova/kpi-prova.component';
 import { FilterComponent } from './filter/filter.component';
 import { IdComponent } from './id/id.component';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { TabsModule } from 'ngx-bootstrap/tabs';
 // import { AnalysiscompComponent } from './analysiscomp/analysiscomp.component';
 
 
@@ -64,7 +64,8 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
     MatListModule,
     BrowserAnimationsModule,
     NgbModule,
-    NgbNavModule
+    NgbNavModule,
+    TabsModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
