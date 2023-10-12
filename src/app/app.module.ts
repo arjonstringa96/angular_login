@@ -25,9 +25,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { KpiProvaComponent } from './kpi-prova/kpi-prova.component';
 import { FilterComponent } from './filter/filter.component';
-import { IdComponent } from './id/id.component';
+import { IdComponent } from './periodo/periodo.component';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { MediaOrariaComponent } from './media-oraria/media-oraria.component';
+import { MediaSettimanaleComponent } from './media-settimanale/media-settimanale.component';
+import { ConfrontoIngressiComponent } from './confronto-ingressi/confronto-ingressi.component';
+import { ConfrontoContapersoneComponent } from './confronto-contapersone/confronto-contapersone.component';
+import { PeriodoComparison1Component } from './periodo-comparison1/periodo-comparison1.component';
+import { PeriodoComparison2Component } from './periodo-comparison2/periodo-comparison2.component';
+import { PeriodoComparison3Component } from './periodo-comparison3/periodo-comparison3.component';
+import { PeriodoComparison4Component } from './periodo-comparison4/periodo-comparison4.component';
+import { PeriodoComparison5Component } from './periodo-comparison5/periodo-comparison5.component';
+import { PeriodoComparison6Component } from './periodo-comparison6/periodo-comparison6.component';
+import { KpiSodisfazione1Component } from './kpi-sodisfazione1/kpi-sodisfazione1.component';
 // import { AnalysiscompComponent } from './analysiscomp/analysiscomp.component';
 
 
@@ -49,6 +60,17 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
     KpiProvaComponent,
     FilterComponent,
     IdComponent,
+    MediaOrariaComponent,
+    MediaSettimanaleComponent,
+    ConfrontoIngressiComponent,
+    ConfrontoContapersoneComponent,
+    PeriodoComparison1Component,
+    PeriodoComparison2Component,
+    PeriodoComparison3Component,
+    PeriodoComparison4Component,
+    PeriodoComparison5Component,
+    PeriodoComparison6Component,
+    KpiSodisfazione1Component,
     
     
     

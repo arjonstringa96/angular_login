@@ -1,14 +1,12 @@
-import { Component ,ElementRef } from '@angular/core';
+import { Component,ElementRef, } from '@angular/core';
 import { Globals } from '../globals';
-import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-id',
-  templateUrl: './id.component.html',
-  styleUrls: ['./id.component.css'],
-
+  selector: 'media-settimanale',
+  templateUrl: './media-settimanale.component.html',
+  styleUrls: ['./media-settimanale.component.css']
 })
-export class IdComponent {
+export class MediaSettimanaleComponent {
   active = 1;
   setActive(tabNumber: number) {
     this.active = tabNumber;
@@ -24,33 +22,29 @@ export class IdComponent {
 
     obj.render({
       element: document.querySelector('#cx'),
-      id: 'c2ff3908-7432-4d83-a952-0be71bac76bf'});
+      id: 'jWVxcR'});
 
       obj.render({
         element: document.querySelector('#ingressi'),
-        id: 'ccb941d4-b36b-438e-a070-83a00d2163d8'
+        id: 'CuXqS'
         
       });
   obj.render({
     element: document.querySelector('#incasso'),
-    id: 'fnwVP'
+    id: 'ehmzpCj'
     
   });
-
-
+  
+  
     obj.render({
       element: document.querySelector('#scontrino'),
-      id: 'AXxdSsw'});
+      id: 'PFfPLG'});
 
 
-      obj.render({
-        element: document.querySelector('#incassoIngressi'),
-        id: '34412465-9856-47b0-b716-8dc934920ed3'});
-
-
+    
         obj.render({
           element: document.querySelector('#ingressiMeteo'),
-          id: '8f4728d9-1259-4015-af6e-4ff29d78d0ba'});
+          id: 'c29eadd0-2719-4265-ba26-3528395c0b66'});
          
   }
 
@@ -62,4 +56,5 @@ export class IdComponent {
     this.init();
   }
 }
+
 

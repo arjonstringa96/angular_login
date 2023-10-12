@@ -1,10 +1,32 @@
 <div class="container-fluid page">
-    <div class="d-flex page__box p-3 mt-2">Analysis</div>
-    <div class="page__content shadow p-3 position-relative">
+  <div class="d-flex page__box p-3 mt-2">Analysis</div>
+  <div class="page__content shadow p-3 position-relative">
       <!-- <iframe src="https://smilein.eu.qlikcloud.com/single/?appid=77c3954d-ce54-4337-9ca3-f54bf93f49e7&obj=panDSJw&theme=horizon&opt=ctxmenu,currsel" style="border:none;width:100%;height:500px;"></iframe> -->
-<!-- <analysiscomp></analysiscomp> -->
-      <div class="page__content-data position-absolute text-center">
-
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12 ">
+                  <periodo-container></periodo-container>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-6">
+                  <media-oraria></media-oraria>
+              </div>
+              <div class="col-6">
+                  <media-settimanale></media-settimanale>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-6">
+                  <confronto-ingressi></confronto-ingressi>
+              </div>
+              <div class="col-6">
+                  <confronto-contapersone></confronto-contapersone>
+              </div>
+          </div>
       </div>
-    </div>
+      <div class="page__content-data position-absolute text-center">
+          <!-- Content for page__content-data -->
+      </div>
   </div>
+</div>

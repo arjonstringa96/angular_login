@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IdComponent } from './id.component';
+import { IdComponent } from './periodo.component';
 
 describe('IdComponent', () => {
   let component: IdComponent;

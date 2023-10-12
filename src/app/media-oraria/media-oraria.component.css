@@ -1,6 +1,6 @@
 .container{
-    width: 100%;
-    height: 600px;
+    max-width: 100%;
+    height: 500px;
 }
 
 #cx {
@@ -20,10 +20,10 @@
     width: 100%;
     height: 600px;
 }
-#incassoIngressi {
+/* #incassoIngressi {
     width: 100%;
     height: 600px;
-}
+} */
 #ingressiMeteo {
     width: 100%;
     height: 600px;

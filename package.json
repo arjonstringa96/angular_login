@@ -30,6 +30,7 @@
     "bootstrap": "^5.2.3",
     "enigma.js": "^2.7.2",
     "ngx-bootstrap": "^11.0.2",
+    "qlik-date-picker": "file:../Downloads/SenseDateRangePicker-master/SenseDateRangePicker-master",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

@@ -8,7 +8,6 @@ const schema = require('enigma.js/schemas/12.20.0.json');
 import { embed } from '@nebula.js/stardust';
 const kpi = require("@nebula.js/sn-kpi")
 const combochart = require('@nebula.js/sn-combo-chart');
-
 const filterpane = require("@nebula.js/sn-filter-pane")
 // import schema from 'enigma.js/schemas/12.170.2.json';
 // const  embed =  require('@nebula.js/stardust')
@@ -20,7 +19,8 @@ const barChart = require('@nebula.js/sn-line-chart');
 // const funnelChart = require('@nebula.js/sn-line-chart');
 // const mekkoChart = require('@nebula.js/sn-line-chart');
 // import { QlikService } from './qlik-service.service';
-
+// const qlikdashboardbundle = require('@nebula.js/dashboard-bundle');
+// const datepicker = require('@qlik-date-picker')
 
 
 //config object contains configuration settings for the Qlik Sense app connection,                                                                
@@ -62,6 +62,12 @@ const n = embed.createConfiguration({
       name: 'lineChart',
       load: () => lineChart,
     },
+    // {
+    //   name: 'datepicker',
+    //   load: () => datepicker,
+    // },
+
+    
     {
       name: 'combochart',
       load: () => combochart,
