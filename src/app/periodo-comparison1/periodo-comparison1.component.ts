@@ -18,26 +18,26 @@ export class PeriodoComparison1Component {
       const obj =  Globals.getNebula();
   
       obj.render({
-        element: document.querySelector('#cx'),
+        element: document.querySelector('#cx11'),
         id: 'NvwEwdA'});
   
         obj.render({
-          element: document.querySelector('#ingressi'),
+          element: document.querySelector('#ingressi11'),
           id: 'pHnGpU'
           
         });
         obj.render({
-          element: document.querySelector('#incassoIngressi'),
+          element: document.querySelector('#incassoIngressi11'),
           id: '6cbd3efb-c3e0-4be3-bf0b-666cb6246015'});
     obj.render({
-      element: document.querySelector('#incassoCro'),
+      element: document.querySelector('#incassoCro11'),
       id: 'kjpyW'
       
     });
    
     
       obj.render({
-        element: document.querySelector('#scontrinoMedio'),
+        element: document.querySelector('#scontrinoMedio11'),
         id: 'kjpyW'});
       
            

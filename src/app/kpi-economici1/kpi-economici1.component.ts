@@ -1,7 +1,7 @@
 import { Component ,ElementRef } from '@angular/core';
   import { Globals } from '../globals';
 @Component({
-  selector: 'app-kpi-economici1',
+  selector: 'kpi-economici1',
   templateUrl: './kpi-economici1.component.html',
   styleUrls: ['./kpi-economici1.component.css']
 })
@@ -21,22 +21,22 @@ export class KpiEconomici1Component {
           const obj =  Globals.getNebula();
       
           obj.render({
-            element: document.querySelector('#ingressi'),
+            element: document.querySelector('#ingressiKpi1'),
             id: 'VTjRsn'});
             obj.render({
-              element: document.querySelector('#incasso'),
+              element: document.querySelector('#incassoKpi1'),
               id: 'bArdZT'});
               obj.render({
-                element: document.querySelector('#scontrini'),
+                element: document.querySelector('#scontriniKpi1'),
                 id: 'NwVBPBA'});
                 obj.render({
-                  element: document.querySelector('#scontrinoMedio'),
+                  element: document.querySelector('#scontrinoMedioKpi1'),
                   id: 'pjNSNbN'});
                   obj.render({
-                    element: document.querySelector('#conversionRate'),
+                    element: document.querySelector('#conversionRateKpi1'),
                     id: 'bWDzwr'});
                     obj.render({
-                      element: document.querySelector('#resaMq'),
+                      element: document.querySelector('#resaMqKpi1'),
                       id: 'UPtLEL'});
       
             

@@ -1,29 +1,29 @@
 .container{
     width: 100%;
-    height: 500px;
+    height: 250px;
 }
 
-#ingressi {
+#ingressiKpi1 {
     width: 100%;
     height: 100px;
 }
-#incasso {
+#incassoKpi1 {
     width: 100%;
     height: 100px;
 }
-#scontrini {
+#scontriniKpi1 {
     width: 100%;
     height: 100px;
 }
-#scontrinoMedio {
+#scontrinoMedioKpi1 {
     width: 100%;
     height: 100px;
 }
-#conversionRate {
+#conversionRateKpi1 {
     width: 100%;
     height: 100px;
 }
-#resaMq {
+#resaMqKpi1 {
     width: 100%;
     height: 100px;
 }

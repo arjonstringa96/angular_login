@@ -18,16 +18,16 @@ export class KpiSodisfazione1Component {
         const obj =  Globals.getNebula();
     
         obj.render({
-          element: document.querySelector('#smileindex'),
+          element: document.querySelector('#smileindexSod1'),
           id: 'cuqWPN'});
           obj.render({
-            element: document.querySelector('#sodisfazione'),
+            element: document.querySelector('#sodisfazioneSod1'),
             id: 'dvjHcn'});
             obj.render({
-              element: document.querySelector('#nps'),
+              element: document.querySelector('#npsSod1'),
               id: 'GMABDSM'});
               obj.render({
-                element: document.querySelector('#feedback'),
+                element: document.querySelector('#feedbackSod1'),
                 id: 'JMMjAsY'});
     
           
