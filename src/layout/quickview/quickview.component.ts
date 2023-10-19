@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Globals } from 'src/app/globals';
 
 @Component({
   selector: 'app-quickview',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class QuickviewComponent {
 
-}
+    ngOnInit() {
+      Globals.connection();
+  
+    }
+  }
+  
+

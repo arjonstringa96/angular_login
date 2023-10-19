@@ -22,29 +22,29 @@ export class MediaOrariaComponent {
     const obj =  Globals.getNebula();
 
     obj.render({
-      element: document.querySelector('#cx'),
+      element: document.querySelector('#cx3'),
       id: 'GXwgTZ'});
 
       obj.render({
-        element: document.querySelector('#ingressi'),
+        element: document.querySelector('#ingressi3'),
         id: 'QgjhZp'
         
       });
   obj.render({
-    element: document.querySelector('#incasso'),
+    element: document.querySelector('#incasso3'),
     id: 'BzNQCY'
     
   });
   
   
     obj.render({
-      element: document.querySelector('#scontrino'),
+      element: document.querySelector('#scontrino3'),
       id: 'eJPN'});
 
 
     
         obj.render({
-          element: document.querySelector('#ingressiMeteo'),
+          element: document.querySelector('#ingressiMeteo3'),
           id: 'd8eb663c-8ee7-42c2-af1a-46c8d0f104ad'});
          
   }

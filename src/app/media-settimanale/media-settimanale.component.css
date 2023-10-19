@@ -3,31 +3,28 @@
     height: 500px;
 }
 
-#cx {
+ #cx4 {
     width: 100%;
-    height: 600px;
+    height: 400px;
 }
 
-#ingressi {
+#ingressi4 {
     width: 100%;
-    height: 600px;
+    height: 400px;
 }
-#incasso {
+#incasso4 {
     width: 100%;
-    height: 600px;
+    height: 400px;
 }
-#scontrino {
+#scontrino4 {
     width: 100%;
-    height: 600px;
+    height: 400px;
 }
-/* #incassoIngressi {
+
+#ingressiMeteo4 {
     width: 100%;
-    height: 600px;
-} */
-#ingressiMeteo {
-    width: 100%;
-    height: 600px;
-}
+    height: 400px;
+} 
 
 
 /* ng-template {

@@ -20,7 +20,7 @@ const barChart = require('@nebula.js/sn-line-chart');
 // const mekkoChart = require('@nebula.js/sn-line-chart');
 // import { QlikService } from './qlik-service.service';
 // const qlikdashboardbundle = require('@nebula.js/dashboard-bundle');
-// const datepicker = require('@qlik-date-picker')
+// const pivotTable = require('@nebula.js/sn-pivot-table')
 
 
 //config object contains configuration settings for the Qlik Sense app connection,                                                                
@@ -63,8 +63,8 @@ const n = embed.createConfiguration({
       load: () => lineChart,
     },
     // {
-    //   name: 'datepicker',
-    //   load: () => datepicker,
+    //   name: 'pivotTable',
+    //   load: () => pivotTable,
     // },
 
     

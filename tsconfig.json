@@ -14,7 +14,12 @@
     "sourceMap": true,
     "declaration": false,
     "paths": {
-      "@nebula.js/stardust": ["node_modules/@nebula.js/stardust"] // Ensure the path is correct
+      "@nebula.js/stardust": [
+        "node_modules/@nebula.js/stardust"
+      ],
+      "datepicker": [
+        "dist/datepicker"
+      ] // Ensure the path is correct
     },
 
     "downlevelIteration": true,

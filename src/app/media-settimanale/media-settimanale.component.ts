@@ -21,29 +21,29 @@ export class MediaSettimanaleComponent {
     const obj =  Globals.getNebula();
 
     obj.render({
-      element: document.querySelector('#cx'),
+      element: document.querySelector('#cx4'),
       id: 'jWVxcR'});
 
       obj.render({
-        element: document.querySelector('#ingressi'),
+        element: document.querySelector('#ingressi4'),
         id: 'CuXqS'
         
       });
   obj.render({
-    element: document.querySelector('#incasso'),
+    element: document.querySelector('#incasso4'),
     id: 'ehmzpCj'
     
   });
   
   
     obj.render({
-      element: document.querySelector('#scontrino'),
+      element: document.querySelector('#scontrino4'),
       id: 'PFfPLG'});
 
 
     
         obj.render({
-          element: document.querySelector('#ingressiMeteo'),
+          element: document.querySelector('#ingressiMeteo4'),
           id: 'c29eadd0-2719-4265-ba26-3528395c0b66'});
          
   }

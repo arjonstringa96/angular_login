@@ -1,0 +1,29 @@
+.container{
+    width: 100%;
+    height: 500px;
+}
+
+#ingressi {
+    width: 100%;
+    height: 100px;
+}
+#incasso {
+    width: 100%;
+    height: 100px;
+}
+#scontrini {
+    width: 100%;
+    height: 100px;
+}
+#scontrinoMedio {
+    width: 100%;
+    height: 100px;
+}
+#conversionRate {
+    width: 100%;
+    height: 100px;
+}
+#resaMq {
+    width: 100%;
+    height: 100px;
+}

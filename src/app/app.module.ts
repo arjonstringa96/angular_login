@@ -39,9 +39,17 @@ import { PeriodoComparison4Component } from './periodo-comparison4/periodo-compa
 import { PeriodoComparison5Component } from './periodo-comparison5/periodo-comparison5.component';
 import { PeriodoComparison6Component } from './periodo-comparison6/periodo-comparison6.component';
 import { KpiSodisfazione1Component } from './kpi-sodisfazione1/kpi-sodisfazione1.component';
+import { ComparisonRepartiComponent } from '../layout/comparison-reparti/comparison-reparti.component';
+import { TurniPersonaliComponent } from '../layout/turni-personali/turni-personali.component';
+import { ConfrontoMonteOreComponent } from '../app/confronto-monte-ore/confronto-monte-ore.component';
+import { ForecastRepartiComponent } from './forecast-reparti/forecast-reparti.component';
+import { ProvaperkpiComponent } from './provaperkpi/provaperkpi.component';
+import { KpiSodisfazione2Component } from './kpi-sodisfazione2/kpi-sodisfazione2.component';
+import { KpiEconomici1Component } from './kpi-economici1/kpi-economici1.component';
+import { KpiEconomici2Component } from './kpi-economici2/kpi-economici2.component';
 // import { AnalysiscompComponent } from './analysiscomp/analysiscomp.component';
-
-
+// import {DatepickerModule} from '../../projects/datepicker/src/lib/datepicker.module';
+// import{DateRangePicker} from '../../projects/SenseDateRangePicker-master/src/lib/daterangepicker.js'
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,7 +79,14 @@ import { KpiSodisfazione1Component } from './kpi-sodisfazione1/kpi-sodisfazione1
     PeriodoComparison5Component,
     PeriodoComparison6Component,
     KpiSodisfazione1Component,
-    
+    ComparisonRepartiComponent,
+    TurniPersonaliComponent,
+    ConfrontoMonteOreComponent,
+    ForecastRepartiComponent,
+    ProvaperkpiComponent,
+    KpiSodisfazione2Component,
+    KpiEconomici1Component,
+    KpiEconomici2Component,
     
     
   ],
@@ -87,7 +102,8 @@ import { KpiSodisfazione1Component } from './kpi-sodisfazione1/kpi-sodisfazione1
     BrowserAnimationsModule,
     NgbModule,
     NgbNavModule,
-    TabsModule
+    TabsModule,
+    // DatepickerModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
