@@ -17,10 +17,12 @@
       "@nebula.js/stardust": [
         "node_modules/@nebula.js/stardust"
       ],
-      "datepicker": [
-        "dist/datepicker"
-      ] // Ensure the path is correct
+      // "datepicker": [
+      //   "dist/datepicker"
+      // ],
+     
     },
+    "preserveSymlinks": true,
 
     "downlevelIteration": true,
     "experimentalDecorators": true,

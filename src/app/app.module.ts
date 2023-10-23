@@ -51,7 +51,16 @@ import { PuntiEsperienzaKPIComponent } from './punti-esperienza-kpi/punti-esperi
 import { PuntiEsperienzaComparison1Component } from './punti-esperienza-comparison1/punti-esperienza-comparison1.component';
 import { PuntiEsperienzaComparison2Component } from './punti-esperienza-comparison2/punti-esperienza-comparison2.component';
 import {initServicesFactory} from '../app/initServiceFactory'
-import {Globals} from '../app/globals'
+import {Globals} from '../app/globals';
+import { ComparisonRepartiGraph1Component } from './comparisonRepartiGraphs/comparison-reparti-graph1/comparison-reparti-graph1.component';
+import { ComparisonRepartiGraph2Component } from './comparisonRepartiGraphs/comparison-reparti-graph2/comparison-reparti-graph2.component';
+import { ComparisonRepartiGraph3Component } from './comparisonRepartiGraphs/comparison-reparti-graph3/comparison-reparti-graph3.component';
+import { ComparisonRepartiGraph4Component } from './comparisonRepartiGraphs/comparison-reparti-graph4/comparison-reparti-graph4.component';
+import { ComparisonRepartiGraph5Component } from './comparisonRepartiGraphs/comparison-reparti-graph5/comparison-reparti-graph5.component';
+import { ComparisonRepartiGraph6Component } from './comparisonRepartiGraphs/comparison-reparti-graph6/comparison-reparti-graph6.component';
+import { ComparisonRepartiGraph7Component } from './comparisonRepartiGraphs/comparison-reparti-graph7/comparison-reparti-graph7.component';
+import { ComparisonRepartiGraph8Component } from './comparisonRepartiGraphs/comparison-reparti-graph8/comparison-reparti-graph8.component';
+import { ComparisonRepartiGraph9Component } from './comparisonRepartiGraphs/comparison-reparti-graph9/comparison-reparti-graph9.component'
 // import { AnalysiscompComponent } from './analysiscomp/analysiscomp.component';
 // import {DatepickerModule} from '../../projects/datepicker/src/lib/datepicker.module';
 // import{DateRangePicker} from '../../projects/SenseDateRangePicker-master/src/lib/daterangepicker.js'
@@ -95,6 +104,15 @@ import {Globals} from '../app/globals'
     PuntiEsperienzaKPIComponent,
     PuntiEsperienzaComparison1Component,
     PuntiEsperienzaComparison2Component,
+    ComparisonRepartiGraph1Component,
+    ComparisonRepartiGraph2Component,
+    ComparisonRepartiGraph3Component,
+    ComparisonRepartiGraph4Component,
+    ComparisonRepartiGraph5Component,
+    ComparisonRepartiGraph6Component,
+    ComparisonRepartiGraph7Component,
+    ComparisonRepartiGraph8Component,
+    ComparisonRepartiGraph9Component,
     
     
   ],
@@ -123,8 +141,3 @@ import {Globals} from '../app/globals'
 export class AppModule { }
 
 
-// {provide: APP_INITIALIZER,
-//   useFactory: () =>  Globals.connection(),
-//   deps: [Globals],
-//   multi: true}],
-// bootstrap: [AppComponent]

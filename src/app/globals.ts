@@ -2,7 +2,7 @@
 // declare module '@nebula.js/stardust';
 import { Injectable } from '@angular/core';
 import { embed } from '@nebula.js/stardust';
-
+// import {datepicker} from '../../node_modules/qlik-date-picker';
 
 // import * as stardust from '@nebula.js/stardust';
 
@@ -12,7 +12,6 @@ import { embed } from '@nebula.js/stardust';
 // const mekkoChart = require('@nebula.js/sn-line-chart');
 // import { QlikService } from './qlik-service.service';
 // const qlikdashboardbundle = require('@nebula.js/dashboard-bundle');
-// const pivotTable = require('@nebula.js/sn-pivot-table')
 @Injectable({
   providedIn: 'root'
 })
@@ -20,11 +19,12 @@ import { embed } from '@nebula.js/stardust';
 
 
 export class Globals{
-  private enigma = require('enigma.js');
-  private kpi = require("@nebula.js/sn-kpi")
+private enigma = require('enigma.js');
+private kpi = require("@nebula.js/sn-kpi")
 private combochart = require('@nebula.js/sn-combo-chart');
 private filterpane = require("@nebula.js/sn-filter-pane")
-
+private pivotTable = require('@nebula.js/sn-pivot-table')
+// private datepicker = require('qlik-date-picker')
 // import schema from 'enigma.js/schemas/12.170.2.json';
 // const  embed =  require('@nebula.js/stardust')
 private lineChart = require('@nebula.js/sn-line-chart');
@@ -64,16 +64,22 @@ private n = embed.createConfiguration({
         name: "filterpane",
       load: () => this.filterpane,
       },
-   
+      {
+        name: "filterpane",
+      load: () => this.filterpane,
+      },
     {
       name: 'lineChart',
       load: () => this.lineChart,
     },
+    {
+      name: 'pivotTable',
+      load: () => this.pivotTable,
+    },
     // {
-    //   name: 'pivotTable',
-    //   load: () => pivotTable,
+    //   name: 'datepicker',
+    //   load: () => this.datepicker,
     // },
-
     
     {
       name: 'combochart',

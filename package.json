@@ -24,6 +24,7 @@
     "@nebula.js/sn-filter-pane": "^0.14.0",
     "@nebula.js/sn-kpi": "^0.13.4",
     "@nebula.js/sn-line-chart": "^0.7.2",
+    "@nebula.js/sn-pivot-table": "^2.3.0",
     "@nebula.js/sn-table": "^2.7.0",
     "@nebula.js/stardust": "^4.4.0",
     "@ng-bootstrap/ng-bootstrap": "^15.1.1",
@@ -31,7 +32,7 @@
     "bootstrap": "^5.2.3",
     "enigma.js": "^2.7.2",
     "ngx-bootstrap": "^11.0.2",
-    "qlik-date-picker": "file:../Downloads/SenseDateRangePicker-master/SenseDateRangePicker-master",
+    "qlik-date-picker": "file:../Downloads/SenseDateRangePicker-master",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
@@ -50,6 +51,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^16.2.3",
     "typescript": "~5.1.3"
-
   }
+  
+  
 }

@@ -9,7 +9,7 @@ export class ForecastRepartiComponent {
   
     
     
-  constructor(private elementRef: ElementRef,private globals : Globals) {
+  constructor(private globals : Globals) {
     
   }
 
