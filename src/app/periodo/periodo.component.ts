@@ -15,12 +15,12 @@ export class IdComponent {
   }
 
 
-  constructor(private elementRef: ElementRef) {
+  constructor(private elementRef: ElementRef,private globals : Globals) {
     
-   }
+  }
 
-   init = async () => {
-    const obj =  Globals.getNebula();
+  init = async () => {
+   const obj =  this.globals.getNebula();
 
     obj.render({
       element: document.querySelector('#cx'),

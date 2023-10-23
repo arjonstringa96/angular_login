@@ -1,19 +1,11 @@
 // import enigma from 'enigma.js';
 // declare module '@nebula.js/stardust';
 import { Injectable } from '@angular/core';
-
-const enigma = require('enigma.js');
-const schema = require('enigma.js/schemas/12.20.0.json');
-// import * as stardust from '@nebula.js/stardust';
 import { embed } from '@nebula.js/stardust';
-const kpi = require("@nebula.js/sn-kpi")
-const combochart = require('@nebula.js/sn-combo-chart');
-const filterpane = require("@nebula.js/sn-filter-pane")
-// import schema from 'enigma.js/schemas/12.170.2.json';
-// const  embed =  require('@nebula.js/stardust')
-const lineChart = require('@nebula.js/sn-line-chart');
-// const kpi = require('@nebula.js/sn-kpi')
-const barChart = require('@nebula.js/sn-line-chart');
+
+
+// import * as stardust from '@nebula.js/stardust';
+
 // const pieChart = require('@nebula.js/sn-line-chart');
 // const sankeyChart = require('@nebula.js/sn-line-chart');
 // const funnelChart = require('@nebula.js/sn-line-chart');
@@ -21,11 +13,27 @@ const barChart = require('@nebula.js/sn-line-chart');
 // import { QlikService } from './qlik-service.service';
 // const qlikdashboardbundle = require('@nebula.js/dashboard-bundle');
 // const pivotTable = require('@nebula.js/sn-pivot-table')
+@Injectable({
+  providedIn: 'root'
+})
 
 
-//config object contains configuration settings for the Qlik Sense app connection,                                                                
+
+export class Globals{
+  private enigma = require('enigma.js');
+  private kpi = require("@nebula.js/sn-kpi")
+private combochart = require('@nebula.js/sn-combo-chart');
+private filterpane = require("@nebula.js/sn-filter-pane")
+
+// import schema from 'enigma.js/schemas/12.170.2.json';
+// const  embed =  require('@nebula.js/stardust')
+private lineChart = require('@nebula.js/sn-line-chart');
+// const kpi = require('@nebula.js/sn-kpi')
+private barChart = require('@nebula.js/sn-line-chart');
+
+  //config object contains configuration settings for the Qlik Sense app connection,                                                                
 //such as the host URL, app ID, and web integration ID.
-const config = {
+private config = {
   host: 'https://smilein.eu.qlikcloud.com',                 
   appId: '77c3954d-ce54-4337-9ca3-f54bf93f49e7',
   webIntegrationId: 'ZstNGu3zpJUHUz8-50_i-YKexhpdsyGL',
@@ -33,11 +41,10 @@ const config = {
 
 
 
-
 //n is a configuration object for Nebula.js. It specifies various settings like the theme, 
 //language, and constraints for the visualization.
 
-const n = embed.createConfiguration({
+private n = embed.createConfiguration({
   context: {
     theme: 'light',
     language: 'en-US',
@@ -55,12 +62,12 @@ const n = embed.createConfiguration({
     
       {
         name: "filterpane",
-      load: () => filterpane,
+      load: () => this.filterpane,
       },
    
     {
       name: 'lineChart',
-      load: () => lineChart,
+      load: () => this.lineChart,
     },
     // {
     //   name: 'pivotTable',
@@ -70,15 +77,15 @@ const n = embed.createConfiguration({
     
     {
       name: 'combochart',
-      load: () => combochart,
+      load: () => this.combochart,
     },
     {
       name: 'barChart',
-      load: () => barChart,
+      load: () => this.barChart,
     },
     {
       name: 'kpi',
-      load: () => kpi,
+      load: () => this.kpi,
     },
  
   ],
@@ -90,8 +97,8 @@ const n = embed.createConfiguration({
 
 // This asynchronous function retrieves CSRF headers required for authentication with Qlik Sense.
 
-async function getQCSHeaders() {
-  const { host, webIntegrationId } = config;
+ public async getQCSHeaders() {
+  const { host, webIntegrationId } = this.config;
   const response = await fetch(`${host}/api/v1/csrf-token`, {  //It makes a fetch request to the Qlik Sense server to obtain a CSRF token.
     credentials: 'include',
     headers: { 'qlik-web-integration-id': webIntegrationId, },
@@ -111,12 +118,13 @@ async function getQCSHeaders() {
     
   
 }
-const connect = async () => {      //asynchronous function establishes a WebSocket connection to the Qlik Sense app.
-  const { host, appId, webIntegrationId } = config;
+public connect = async () => {      //asynchronous function establishes a WebSocket connection to the Qlik Sense app.
+  const { host, appId, webIntegrationId } = this.config;
   let url = `wss://${host}/app/${appId}`     //It constructs the WebSocket URL with the app ID and, if available, the web integration ID and CSRF token.
- 
+  let schema = require('enigma.js/schemas/12.20.0.json');
+
   if (webIntegrationId) {
-    const headers = await getQCSHeaders();
+    const headers = await this.getQCSHeaders();
 
     console.log(headers);
     // const headers: {
@@ -127,17 +135,17 @@ const connect = async () => {      //asynchronous function establishes a WebSock
     
   }
   console.log(url)
-  const enigmaGlobal = await enigma    // nigma.js to create and open a connection to the Qlik Sense app, based on the provided schema.
+  const enigmaGlobal = await this.enigma    // nigma.js to create and open a connection to the Qlik Sense app, based on the provided schema.
     .create({
       schema,
       url,
     })
     .open();    //it returns a promise that resolves with the opened app.
 
-  return enigmaGlobal.openDoc(config.appId);
+  return enigmaGlobal.openDoc(this.config.appId);
 }
 
-const connectQlik = async () => {
+private connectQlik = async () => {
     {
 
         const tenantUri = 'https://smilein.eu.qlikcloud.com';
@@ -201,7 +209,7 @@ const connectQlik = async () => {
           const schema = await (await fetch('https://unpkg.com/enigma.js@2.7.0/schemas/12.612.0.json')).json();
     
           // create the enigma.js session:
-          const session = enigma.create({ url, schema });
+          const session = this.enigma.create({ url, schema });
           const global = await session.open();
     
           // open the app, and fetch the layout:
@@ -212,16 +220,15 @@ const connectQlik = async () => {
 }
 
 
-export class Globals{
-
-  private static nebula: any ;
-  public static connection = async () => {
-     Globals.nebula = await connectQlik();
+  private  nebula: any ;
+  public  connection = async () => {
+     this.nebula = await this.connectQlik();
     
   }
 
-public static getNebula()
+public  getNebula()
 {
-  return n(Globals.nebula);
+  return this.n(this.nebula);
   
 }}
+

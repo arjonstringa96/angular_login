@@ -7,12 +7,12 @@ import { Globals } from '../globals';
 })
 export class PeriodoComparison5Component {
  
-    constructor(private elementRef: ElementRef) {
-      
-     }
-  
-     init = async () => {
-      const obj =  Globals.getNebula();
+  constructor(private elementRef: ElementRef,private globals : Globals) {
+    
+  }
+
+  init = async () => {
+   const obj =  this.globals.getNebula();
   
       obj.render({
         element: document.querySelector('#cx51'),

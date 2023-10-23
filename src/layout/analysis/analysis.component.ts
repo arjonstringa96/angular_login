@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Globals } from 'src/app/globals';
 @Component({
   selector: 'app-analysis',
   templateUrl: './analysis.component.html',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AnalysisComponent {
 
+  
+  
+  ngOnInit() {
+
+  }
 }

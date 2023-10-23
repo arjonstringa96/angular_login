@@ -1,7 +1,6 @@
 import { Component, OnInit, ElementRef, Input } from '@angular/core';
 import { Globals } from '../globals';
 import { filter } from 'rxjs';
-
 @Component({
   selector: 'nebula',
   template: ``,
@@ -14,12 +13,11 @@ export class NebulaComponent implements OnInit {
   @Input() type!: string ;
   @Input() properties!: object;
 
-  constructor(private elementRef: ElementRef) {
-    
+  constructor(private elementRef: ElementRef , private globals : Globals) {
    }
-
+   
    init = async () => {
-    const nebula = await Globals.getNebula();
+    const nebula = await this.globals.getNebula();
     const { type, properties } = this;
     // const filterElement = document.querySelector('#filter');
     console.log('check if type and properties come from this',this);
@@ -31,21 +29,21 @@ if (type === 'selections') {
     selections.mount(this.elementRef.nativeElement);
   // const field = await nebula.field('GeneralTimestamp.ResultTimestamp');
   // field.mount(this.elementRef.nativeElement, { title: 'Timestamp' } );
-  nebula.render({
-    element: this.elementRef.nativeElement,
-    id: 'ZkuTsBU'
+  // nebula.render({
+  //   element: this.elementRef.nativeElement,
+  //   id: 'ZkuTsBU'
     
-  });
+  // });
 
   //c2ff3908-7432-4d83-a952-0be71bac76bf
-  nebula.render({
-    element: this.elementRef.nativeElement,
-    id: 'uRpPQNR'
+  // nebula.render({
+  //   element: this.elementRef.nativeElement,
+  //   id: 'uRpPQNR'
     
-  });
-  nebula.render({
-         element: this.elementRef.nativeElement.querySelector('#map'),
-         id: 'GXwgTZ'});
+  // });
+  // nebula.render({
+  //        element: this.elementRef.nativeElement.querySelector('#map'),
+  //        id: 'GXwgTZ'});
         
   // nebula.render({
   //   element: this.elementRef.nativeElement,

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Globals } from 'src/app/globals';
+// import { Globals } from 'src/app/globals';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,7 +7,7 @@ import { Globals } from 'src/app/globals';
 })
 export class HomeComponent {
   ngOnInit() {
-    Globals.connection();
+    // Globals.connection();
 
   }
 }

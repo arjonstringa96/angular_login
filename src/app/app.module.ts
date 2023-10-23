@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -47,6 +47,11 @@ import { ProvaperkpiComponent } from './provaperkpi/provaperkpi.component';
 import { KpiSodisfazione2Component } from './kpi-sodisfazione2/kpi-sodisfazione2.component';
 import { KpiEconomici1Component } from './kpi-economici1/kpi-economici1.component';
 import { KpiEconomici2Component } from './kpi-economici2/kpi-economici2.component';
+import { PuntiEsperienzaKPIComponent } from './punti-esperienza-kpi/punti-esperienza-kpi.component';
+import { PuntiEsperienzaComparison1Component } from './punti-esperienza-comparison1/punti-esperienza-comparison1.component';
+import { PuntiEsperienzaComparison2Component } from './punti-esperienza-comparison2/punti-esperienza-comparison2.component';
+import {initServicesFactory} from '../app/initServiceFactory'
+import {Globals} from '../app/globals'
 // import { AnalysiscompComponent } from './analysiscomp/analysiscomp.component';
 // import {DatepickerModule} from '../../projects/datepicker/src/lib/datepicker.module';
 // import{DateRangePicker} from '../../projects/SenseDateRangePicker-master/src/lib/daterangepicker.js'
@@ -87,6 +92,9 @@ import { KpiEconomici2Component } from './kpi-economici2/kpi-economici2.componen
     KpiSodisfazione2Component,
     KpiEconomici1Component,
     KpiEconomici2Component,
+    PuntiEsperienzaKPIComponent,
+    PuntiEsperienzaComparison1Component,
+    PuntiEsperienzaComparison2Component,
     
     
   ],
@@ -103,9 +111,20 @@ import { KpiEconomici2Component } from './kpi-economici2/kpi-economici2.componen
     NgbModule,
     NgbNavModule,
     TabsModule,
-    // DatepickerModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
-  bootstrap: [AppComponent]
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy},{
+    provide: APP_INITIALIZER,
+    useFactory: initServicesFactory ,  //(config: Globals) => () => config.connection()
+    deps: [Globals],
+    multi : true,
+  },],
+   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+// {provide: APP_INITIALIZER,
+//   useFactory: () =>  Globals.connection(),
+//   deps: [Globals],
+//   multi: true}],
+// bootstrap: [AppComponent]

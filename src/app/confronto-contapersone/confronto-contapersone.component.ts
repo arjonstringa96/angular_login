@@ -6,12 +6,12 @@ import { Globals } from '../globals';
   styleUrls: ['./confronto-contapersone.component.css']
 })
 export class ConfrontoContapersoneComponent {
-  constructor(private elementRef: ElementRef) {
+  constructor(private elementRef: ElementRef,private globals : Globals) {
     
   }
 
   init = async () => {
-   const obj =  Globals.getNebula();
+   const obj =  this.globals.getNebula();
 
    obj.render({
      element: document.querySelector('#confrontoContapersone'),

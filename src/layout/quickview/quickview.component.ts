@@ -7,11 +7,10 @@ import { Globals } from 'src/app/globals';
   styleUrls: ['./quickview.component.scss']
 })
 export class QuickviewComponent {
+  
 
     ngOnInit() {
-      Globals.connection();
-  
-    }
+      
   }
   
-
+}
